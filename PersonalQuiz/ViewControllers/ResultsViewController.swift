@@ -55,10 +55,8 @@ extension ResultsViewController {
         }
         
         allScore = [scoreDog, scoreCat, scoreRabbit, scoreTurtle]
-        print(allScore)
         
         if let max = allScore.sorted(by: >).first {
-            print(max)
             if max == scoreDog {
                 winnerType = AnimalType.dog
             } else if max == scoreCat {
@@ -70,7 +68,6 @@ extension ResultsViewController {
                 
             }
         }
-        
         return winnerType!
     }
 }
