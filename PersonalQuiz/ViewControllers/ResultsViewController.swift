@@ -9,9 +9,6 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-    // 1. Передать сюда массив с ответами
-    // 2. Определить наиболее часто встречающийся тип животного
-    // 3. Отобразить результаты в соответсвии с этим животным
 
     var answersChoosen: [Answer] = []
     
@@ -24,11 +21,7 @@ class ResultsViewController: UIViewController {
        let winnerType = processResult(answersChoosen)
         titleLabel.text = "Вы - \(winnerType.rawValue)"
         resultLabel.text = winnerType.definition
-        
-
     }
-    
-    
 }
  
 extension ResultsViewController {
